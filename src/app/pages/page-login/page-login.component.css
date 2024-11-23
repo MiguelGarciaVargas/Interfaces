@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100vh; /* Altura de la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
+  background-color: #f9f9f9; /* Color de fondo (opcional) */
+  font-family: "Roboto"; /* Fuente */
+}
+
+h1 {
+  margin-bottom: 20px; /* Espacio entre el título y el formulario */
+  font-size: 64px; /* Tamaño del texto */
+  color: #333; /* Color del título */
+  font-weight: lighter;
+}

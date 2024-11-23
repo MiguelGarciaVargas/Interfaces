@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.login-container {
+  /* background-color: white;
+    border: 0px solid #ddd;
+    border-radius: 8px; */
+  padding: 20px 15px;
+  width: 500px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.login-container h2 {
+  background-color: #2080cb;
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: lighter;
+  border-radius: 8px; /* Redondea todos los bordes */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional, para un efecto más limpio */
+}
+
+.inputs {
+  border: 2px solid #add0ec;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 24px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e8ecf4;
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button button {
+  border-radius: 5px;
+  border-color: #7fb1fa;
+  padding: 5px;
+  background-color: white;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.button button:hover {
+  background-color: #007bff; /* Fondo azul al pasar el mouse */
+  color: white; /* Texto blanco */
+}
+
+.button button:active {
+  background-color: #0056b3; /* Fondo azul oscuro al hacer clic */
+  color: white;
+  border-color: #0056b3;
+}
