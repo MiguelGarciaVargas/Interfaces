@@ -6,7 +6,6 @@ body {
     height: 100vh; /* Altura de la ventana */
     width: 100vw;
     margin: 0; /* Elimina márgenes por defecto */
-    background-color: #f9f9f9; /* Color de fondo (opcional) */
   }
   h1 {
     margin-bottom: 20px; /* Espacio entre el título y el formulario */
@@ -45,4 +44,12 @@ body {
     width: 90%;
     max-width: 500px;
     margin-bottom: 10px;
+  }
+  .footer {
+    position: absolute; /* Fija la imagen al fondo */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegura que la imagen se ajuste al ancho */
+    height: auto; /* Mantiene la proporción */
+    z-index: -1; /* Envía la imagen al fondo */
   }
