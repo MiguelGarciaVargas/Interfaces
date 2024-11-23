@@ -6,49 +6,39 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   position: fixed;
+  font-family: "Roboto";
 }
 
 /* Estilo para la parte del perfil */
 .profile {
   text-align: center;
   margin-bottom: 30px;
+  margin: 0px;
 }
 
 .avatar img {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
 }
 
 /* Estilo para los nombres y descripción */
+.profile h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
 .profile h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.profile p {
-  font-size: 14px;
-}
-
-/* Estilo para el dropdown */
-.dropdown {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-#rama {
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 50;
 }
 
 /* Estilo para el menú */
@@ -64,18 +54,18 @@
 }
 
 .menu button {
+  display: flex; /* Activamos Flexbox */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
   width: 100%;
+  height: 50px;
   padding: 10px;
-  font-size: 16px;
-  text-align: left;
-  background-color: #3b82f6;
-  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.menu button:hover {
-  background-color: #2563eb;
 }
