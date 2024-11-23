@@ -10,3 +10,39 @@ html, body {
 div {
     box-sizing: border-box;
 }
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    label, input, button, p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    label, input, button, p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 993px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    label, input, button, p {
+        font-size: 24px;
+    }
+}

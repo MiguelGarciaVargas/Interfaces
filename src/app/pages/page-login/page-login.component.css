@@ -10,7 +10,6 @@ body {
   }
   h1 {
     margin-bottom: 20px; /* Espacio entre el título y el formulario */
-    font-size: 64px; /* Tamaño del texto */
     color: #333; /* Color del título */
     font-weight: lighter;
     text-align: center;
@@ -29,7 +28,7 @@ body {
 
   .header img{ /*Estilos para el logo del header*/
     height: auto;
-    width: 50%;
+    width: 30%;
     max-width: 204px;
     margin-left: 20px;
   }
