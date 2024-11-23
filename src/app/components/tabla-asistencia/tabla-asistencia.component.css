@@ -1,0 +1,30 @@
+.attendance-table {
+  border-collapse: collapse;
+  width: 1050px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.attendance-table thead {
+  background-color: #004ba8;
+  color: white;
+}
+
+.attendance-table tbody tr:nth-child(odd) {
+  background-color: #e3eaf2;
+}
+
+.attendance-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.attendance-table input[type="checkbox"] {
+  display: block;
+  margin: auto;
+}

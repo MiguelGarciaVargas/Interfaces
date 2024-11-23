@@ -1,7 +1,7 @@
 /* Estilos generales de la sidebar */
 .sidebar {
-  width: 250px;
-  background-color: #1e3a8a;
+  width: 350px;
+  background-color: #004a98;
   color: white;
   padding: 20px;
   display: flex;
@@ -10,7 +10,6 @@
   align-items: center;
   height: 100vh;
   position: fixed;
-  font-family: "Roboto";
 }
 
 /* Estilo para la parte del perfil */
@@ -37,8 +36,8 @@
 
 .profile h3 {
   margin: 0px;
-  font-size: 20px;
-  font-weight: 50;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 /* Estilo para el menú */
@@ -57,7 +56,7 @@
   display: flex; /* Activamos Flexbox */
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
-  width: 100%;
+  width: 318px;
   height: 50px;
   padding: 10px;
   font-size: 18px;

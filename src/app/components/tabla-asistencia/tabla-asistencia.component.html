@@ -1,0 +1,22 @@
+<table class="attendance-table">
+  <thead>
+    <tr>
+      <th style="width: 60%">Nombre</th>
+      <th>L</th>
+      <th>M</th>
+      <th>M</th>
+      <th>J</th>
+      <th>V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumno of alumnos">
+      <td>{{ alumno }}</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+  </tbody>
+</table>
