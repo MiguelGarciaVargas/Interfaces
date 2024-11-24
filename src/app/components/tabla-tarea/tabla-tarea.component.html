@@ -1,0 +1,64 @@
+<div class="table-container">
+  <table class="assignment-table">
+    <thead>
+      <tr>
+        <th>
+          <input type="checkbox" />
+        </th>
+        <th>Editar</th>
+        <th>Fecha de asignación</th>
+        <th>Fecha de entrega</th>
+        <th>Asignación</th>
+        <th>Entregas</th>
+        <th>Calificación</th>
+        <th>Enviar</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarea of tareas">
+        <td>
+          <input type="checkbox" />
+        </td>
+        <td>
+          <button class="edit-button">
+            <i class="fa fa-pencil"></i>
+          </button>
+        </td>
+        <td>{{ tarea.fechaAsignacion }}</td>
+        <td>{{ tarea.fechaEntrega }}</td>
+        <td>{{ tarea.asignacion }}</td>
+        <td>
+          <span class="entregas">{{ tarea.entregas }}</span>
+          <i class="fa fa-paperclip"></i>
+        </td>
+        <td>
+          <input
+            type="number"
+            [value]="tarea.calificacion"
+            (change)="actualizarCalificacion(tarea.id, $event)"
+          />
+        </td>
+        <td>
+          <button class="send-button">
+            <i class="fa fa-paper-plane"></i>
+          </button>
+        </td>
+        <td>
+          <button
+            class="status-button"
+            [class.completed]="tarea.estado === 'completada'"
+            [class.pending]="tarea.estado === 'pendiente'"
+          >
+            <i
+              class="fa"
+              [ngClass]="
+                tarea.estado === 'completada' ? 'fa-check' : 'fa-times'
+              "
+            ></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

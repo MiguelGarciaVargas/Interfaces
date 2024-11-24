@@ -1,6 +1,6 @@
 /* Contenedor de la tabla */
 .table-container {
-  width: 1050px; /* Ocupa todo el ancho del contenedor */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
   margin: 0 auto; /* Centra la tabla horizontalmente */
   overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
 }
@@ -41,14 +41,14 @@
 /* Media Queries para tamaños responsivos */
 
 /* Pantallas grandes */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .table-container {
     width: 1050px; /* Ancho máximo para pantallas grandes */
   }
 }
 
 /* Pantallas medianas */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .table-container {
     width: 800px;
   }

@@ -12,7 +12,7 @@
 }
 
 .card-header {
-  width: 164px;
+  width: 70%;
   border: 2px solid white;
   background-color: #2884cc;
   border-radius: 10px;
@@ -42,4 +42,34 @@
 .icon {
   width: 16px; /* Tamaño de la imagen */
   height: 11px; /* Tamaño de la imagen */
+}
+
+/* Media Queries para tamaños responsivos */
+
+/* Pantallas muy pequeñas (menos de 500px) */
+@media (max-width: 949px) {
+  .card {
+    width: 100px; /* Tamaño mínimo */
+  }
+}
+
+/* Pantallas pequeñas */
+@media (min-width: 950px) and (max-width: 1299px) {
+  .card {
+    width: 150px; /* Tamaño mediano */
+  }
+}
+
+/* Pantallas medianas */
+@media (min-width: 1300px) and (max-width: 1499px) {
+  .card {
+    width: 200px; /* Tamaño intermedio */
+  }
+}
+
+/* Pantallas grandes (1250px y mayores) */
+@media (min-width: 1500px) {
+  .card {
+    width: 250px; /* Tamaño máximo */
+  }
 }

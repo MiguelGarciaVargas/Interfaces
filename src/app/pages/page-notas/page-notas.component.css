@@ -16,3 +16,10 @@
   gap: 20px;
   overflow-y: hidden; /* Habilita el scroll si el contenido es demasiado largo */
 }
+
+/* Media queries para pantallas medianas y pequeñas */
+@media (max-width: 1200px) {
+  .layout-container {
+    grid-template-columns: 200px 1fr;
+  }
+}

@@ -1,0 +1,66 @@
+/* Contenedor de la tabla */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+/* Tabla */
+.assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.assignment-table thead {
+  background-color: #004ba8;
+  color: white;
+}
+
+.assignment-table th,
+.assignment-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Botones */
+.edit-button,
+.send-button,
+.status-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.edit-button i {
+  color: #ffa500;
+}
+
+.send-button i {
+  color: #1e90ff;
+}
+
+.status-button.completed i {
+  color: #28a745;
+}
+
+.status-button.pending i {
+  color: #dc3545;
+}
+
+/* Estilo de entregas */
+.entregas {
+  font-weight: bold;
+  color: #004ba8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .assignment-table th,
+  .assignment-table td {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

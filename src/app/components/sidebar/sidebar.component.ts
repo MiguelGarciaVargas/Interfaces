@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
   profileImgUrl = 'assets/images/user-icon.png'; // Ruta correcta desde src
+
+  isCollapsed = false; // Indica si la sidebar está colapsada
+
+  toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
