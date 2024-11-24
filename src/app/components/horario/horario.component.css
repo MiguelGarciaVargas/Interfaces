@@ -4,21 +4,94 @@
 
 .container{
     text-align: center;
+    overflow-x: auto;
+}
+
+.title {
+    min-width: 820px;
 }
 
 .table-class {
     table-layout: fixed;
     border-collapse: collapse;
+    min-width: 820px;
 }
 
 .table-class th {
     color: #B1B1B1B2;
     text-align: center;
     width: auto;
+    padding-bottom: 10px;
 }
 
-.table-class td {
+.table-hour {
     text-align: center;
     color: #457B9D;
+    border-top: 1px solid white;
+    position: relative;
+    top: -20px;
 }
 
+tbody td:not(.table-hour) {
+    padding: 10px;
+}
+
+tbody tr {
+    border-top: 1px solid #DCDCDCB2;
+    height: 50px;
+}
+
+tbody tr p {
+    margin: 0;
+}
+
+.activity {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue1 {
+    background-color: #2080CB;
+}
+
+.blue2 {
+    background-color: #0D6EFD;
+}
+
+.blue3 {
+    background-color: #004A98;
+}
+
+.activity-hour {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 5px;
+}
+
+.activity-hour img {
+    width: 12px;
+}
+
+@media (max-width: 576px) {
+    .activity p {
+        font-size: 7px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .activity p {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 993px) {
+    .activity p {
+        font-size: 10px;
+    }
+}
+
+.activity p {
+    color: white;
+}
