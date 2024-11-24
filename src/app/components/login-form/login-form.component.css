@@ -99,7 +99,6 @@ body {
   color: white;
   padding: 5px 0;
   margin-bottom: 0px;
-  font-size: 36px;
   font-weight: lighter;
   border-radius: 8px; /* Redondea todos los bordes */
   text-align: center;
@@ -117,7 +116,6 @@ body {
 }
 
 label {
-  font-size: 24px;
   color: #333;
   display: block;
   margin-bottom: 5px;
@@ -128,7 +126,6 @@ input {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 24px;
 }
 
 input:focus {
@@ -142,7 +139,6 @@ input:focus {
   padding: 10px;
   background-color: #e8ecf4;
   border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -153,7 +149,6 @@ input:focus {
   padding: 5px;
   background-color: white;
   font-weight: lighter;
-  font-size: 24px;
 }
 
 .button button:hover {
@@ -165,4 +160,8 @@ input:focus {
   background-color: #0056b3; /* Fondo azul oscuro al hacer clic */
   color: white;
   border-color: #0056b3;
+}
+
+.form-box {
+  background-color: white;
 }

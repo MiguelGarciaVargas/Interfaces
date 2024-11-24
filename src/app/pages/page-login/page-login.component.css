@@ -5,7 +5,7 @@ body {
     align-items: center; /* Centra horizontalmente */
     height: 100vh; /* Altura de la ventana */
     width: 100vw;
-    margin: 0; /* Elimina márgenes por defecto */
+    margin: 0;/* Elimina márgenes por defecto */
   }
   h1 {
     margin-bottom: 20px; /* Espacio entre el título y el formulario */
@@ -39,6 +39,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
   }
   .login-box {
     width: 90%;
@@ -51,5 +52,5 @@ body {
     left: 0;
     width: 100%; /* Asegura que la imagen se ajuste al ancho */
     height: auto; /* Mantiene la proporción */
-    z-index: -1; /* Envía la imagen al fondo */
+    z-index: 0; /* Envía la imagen al fondo */
   }
