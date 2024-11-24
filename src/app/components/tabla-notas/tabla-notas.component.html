@@ -1,0 +1,20 @@
+<div class="table-container">
+  <table class="notes-table">
+    <thead>
+      <tr>
+        <th style="width: 80%">Nombre</th>
+        <th>A</th>
+        <th>T</th>
+        <th>C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alumno of alumnos">
+        <td>{{ alumno.nombre }}</td>
+        <td>{{ alumno.calificaciones.A }}</td>
+        <td>{{ alumno.calificaciones.T }}</td>
+        <td>{{ alumno.calificaciones.C }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

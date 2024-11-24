@@ -1,0 +1,11 @@
+app-card-materia {
+  width: 100%;
+  max-width: 250px; /* Define un ancho máximo */
+  height: 100px;
+  margin: 0 auto; /* Centra los cards */
+}
+
+.container {
+  width: 1100px;
+  margin: 10px;
+}
