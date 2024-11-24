@@ -69,6 +69,12 @@
   transition: background-color 0.3s;
 }
 
+.menu button.active {
+  background-color: #105cff; /* Color destacado */
+  color: white; /* Texto en blanco */
+  border-radius: 5px;
+}
+
 /* Media queries para pantallas medianas y pequeñas */
 @media (max-width: 1200px) {
   .sidebar {

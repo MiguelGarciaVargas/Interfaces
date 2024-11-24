@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
   profileImgUrl = 'assets/images/user-icon.png'; // Ruta correcta desde src
 
-  isCollapsed = false; // Indica si la sidebar está colapsada
-
-  toggleSidebar() {
-    this.isCollapsed = !this.isCollapsed;
-  }
+  constructor(private router: Router) {}
 }
