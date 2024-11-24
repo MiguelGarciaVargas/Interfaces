@@ -6,8 +6,9 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 104px);
   position: fixed;
+  overflow-y: auto;
 }
 
 /* Estilo para la parte del perfil */
