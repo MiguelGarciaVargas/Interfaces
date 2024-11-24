@@ -1,0 +1,24 @@
+.container, .table-class{
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+}
+
+.table-class {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table-class th {
+    color: #B1B1B1B2;
+    text-align: center;
+    width: auto;
+}
+
+.table-class td {
+    text-align: center;
+    color: #457B9D;
+}
+
