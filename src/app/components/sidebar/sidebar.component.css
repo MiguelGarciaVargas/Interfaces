@@ -15,7 +15,6 @@
 .profile {
   text-align: center;
   margin-bottom: 30px;
-  margin: 0px;
 }
 
 .menu-icon {
@@ -57,9 +56,7 @@
 }
 
 .menu button {
-  display: flex; /* Activamos Flexbox */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center;
   width: 100%;
   height: 50px;
   padding: 10px;
@@ -73,9 +70,17 @@
   transition: background-color 0.3s;
 }
 
+/* Hover para los botones */
+.menu button:hover {
+  background-color: #004a98;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* Boton activo */
 .menu button.active {
-  background-color: #105cff; /* Color destacado */
-  color: white; /* Texto en blanco */
+  background-color: #105cff;
+  color: white;
   border-radius: 5px;
 }
 

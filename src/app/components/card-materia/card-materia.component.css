@@ -1,26 +1,30 @@
 .card {
   width: 250px;
   height: auto;
-  background-color: #2884cc;
+  background-color: #2080cb;
   border-radius: 10px;
   padding: 10px;
-  text-align: center;
   align-items: center;
-  justify-content: center;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Color de letra de span*/
+}
+
+.clarito {
+  background-color: #2080cb; /* Azul claro */
+}
+
+.fuertito {
+  background-color: #004a98; /* Rojo */
 }
 
 .card-header {
   width: 80%;
   border: 2px solid white;
-  background-color: #2884cc;
+  background-color: transparent;
   border-radius: 10px;
   padding: 8px;
   margin-bottom: 10px;
   color: white;
   font-size: 12px;
-  font-weight: normal;
 }
 
 .card-content {
@@ -28,7 +32,6 @@
   flex-direction: column;
   gap: 15px;
   align-items: center;
-  justify-content: center;
 }
 
 .card-option {
@@ -40,13 +43,12 @@
 }
 
 .icon {
-  width: 16px; /* Tamaño de la imagen */
-  height: 11px; /* Tamaño de la imagen */
+  width: 16px;
+  height: 11px;
 }
 
 /* Media Queries para tamaños responsivos */
-
-/* Pantallas muy pequeñas (menos de 500px) */
+/* Pantallas muy pequeñas */
 @media (max-width: 949px) {
   .card {
     width: 100px; /* Tamaño mínimo */
@@ -56,7 +58,7 @@
 /* Pantallas pequeñas */
 @media (min-width: 950px) and (max-width: 1299px) {
   .card {
-    width: 150px; /* Tamaño mediano */
+    width: 150px; /* Tamaño pequeno */
   }
 }
 
@@ -67,7 +69,7 @@
   }
 }
 
-/* Pantallas grandes (1250px y mayores) */
+/* Pantallas grandes*/
 @media (min-width: 1500px) {
   .card {
     width: 250px; /* Tamaño máximo */

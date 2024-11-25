@@ -1,10 +1,10 @@
-<div class="card">
+<div class="card" [ngClass]="colorClass">
   <button class="card-header">{{ title }}</button>
 
   <div class="card-content">
     <div class="card-option">
       <img src="assets/images/eye-icon.png" alt="Ver clases" class="icon" />
-      <span>Ver clases</span>
+      <span class="link-button" [routerLink]="'/cursos'">Ver clases</span>
     </div>
     <div class="card-option">
       <img src="assets/images/eye-icon.png" alt="Ver alumnos" class="icon" />

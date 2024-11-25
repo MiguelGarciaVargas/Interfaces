@@ -9,7 +9,7 @@
 .layout-container {
   display: grid;
   grid-template-columns: 350px 1fr; /* Sidebar y contenido principal */
-  height: 100%; /* Ocupa toda la altura de la ventana */
+  height: 100%;
   background-color: #f9f9f9;
 }
 
@@ -18,30 +18,6 @@
   margin-top: 104px;
   width: 100%;
   display: flex;
-}
-
-.header { /*Estilos para el header del login*/
-  width: 100%;
-  height: 104px;
-  background-color: #004A98;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-}
-
-.header-logo { /*Estilos para el logo del header*/
-  height: auto;
-  width: 30%;
-  max-width: 204px;
-  margin-left: 20px;
-}
-
-.header-icon { /*Estilos para el icono de cuenta*/
-  height: auto;
-  width: 30%;
-  max-width: 60px;
-  margin-right: 20px;
 }
 
 /* Contenido principal */

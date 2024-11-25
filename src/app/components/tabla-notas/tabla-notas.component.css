@@ -1,15 +1,14 @@
-/* Contenedor de la tabla */
 .table-container {
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  margin: 0 auto; /* Centra la tabla horizontalmente */
-  overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
 }
 
 /* Tabla */
 .notes-table {
   border-collapse: collapse;
-  width: 100%; /* Forza a la tabla a ocupar el 100% del contenedor */
-  max-width: 1050px; /* Ancho máximo para pantallas grandes */
+  width: 100%;
+  max-width: 1050px;
   text-align: center;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,7 +19,7 @@
 .notes-table td {
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: center; /* Centra el texto en las celdas */
+  text-align: center;
 }
 
 /* Encabezado */
@@ -39,11 +38,10 @@
 }
 
 /* Media Queries para tamaños responsivos */
-
 /* Pantallas grandes */
 @media (min-width: 1400px) {
   .table-container {
-    width: 1050px; /* Ancho máximo para pantallas grandes */
+    width: 1050px;
   }
 }
 

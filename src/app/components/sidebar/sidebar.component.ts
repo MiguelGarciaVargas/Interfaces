@@ -9,7 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  profileImgUrl = 'assets/images/user-icon.png'; // Ruta correcta desde src
+  profileImgUrl = 'assets/images/user-icon.png'; // Ruta de imagen de usuario
 
   constructor(private router: Router) {}
 }

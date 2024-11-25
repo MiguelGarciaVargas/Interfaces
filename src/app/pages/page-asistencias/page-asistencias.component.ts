@@ -4,6 +4,7 @@ import { CardRowComponent } from '../../components/card-row/card-row.component';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
 import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
 import { TablaAsistenciaComponent } from '../../components/tabla-asistencia/tabla-asistencia.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-page-asistencias',
@@ -14,6 +15,7 @@ import { TablaAsistenciaComponent } from '../../components/tabla-asistencia/tabl
     SidebarComponent,
     SearchBarComponent,
     TablaAsistenciaComponent,
+    HeaderComponent,
   ],
   templateUrl: './page-asistencias.component.html',
   styleUrl: './page-asistencias.component.css',
