@@ -1,0 +1,16 @@
+.add-button-class {
+    border-radius: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    background-color: #0D6EFD;
+    width: 150px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button-class:hover {
+    background-color: #007bff;
+}
