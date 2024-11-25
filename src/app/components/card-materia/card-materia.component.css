@@ -21,6 +21,11 @@
   color: white;
   font-size: 12px;
   font-weight: normal;
+  transition: background-color 0.3s;
+}
+
+.card-header:hover {
+  background-color: #007bff;
 }
 
 .card-content {

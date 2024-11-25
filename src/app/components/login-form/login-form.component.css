@@ -149,6 +149,7 @@ input:focus {
   padding: 5px;
   background-color: white;
   font-weight: lighter;
+  transition: background-color 0.3s;
 }
 
 .button button:hover {

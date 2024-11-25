@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { Tarea } from '../../interfaces/tarea';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -10,18 +10,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './tabla-tarea.component.html',
   styleUrl: './tabla-tarea.component.css',
 })
-export class TablaTareaComponent implements OnChanges {
-  @Input() listaTareas: Tarea[] = []; // Lista recibida desde el componente padre
-  tareas: Tarea[] = []; // Copia local para manipular
+export class TablaTareaComponent {
+  @Input() tareas: Tarea[] = []; // Lista recibida desde el componente padre
+  @Output() onEditTarea = new EventEmitter<Tarea>();
   sortOrder: 'asc' | 'desc' = 'asc'; // Orden inicial
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['listaTareas']) {
-      // Sincroniza la copia local cuando cambie el Input
-      this.tareas = [...this.listaTareas];
-      this.sortTareas();
-    }
-  }
 
   toggleOrder() {
     this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc'; // Alterna el orden
@@ -48,9 +40,13 @@ export class TablaTareaComponent implements OnChanges {
   }
 
   marcarCompletada(id: number) {
-    const tarea = this.listaTareas.find((t) => t.id === id);
+    const tarea = this.tareas.find((t) => t.id === id);
     if (tarea) {
       tarea.estado = 'completada';
     }
+  }
+
+  editarTarea(tarea: Tarea) {
+    this.onEditTarea.emit(tarea);
   }
 }

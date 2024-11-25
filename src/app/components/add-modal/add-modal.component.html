@@ -1,0 +1,29 @@
+<div class="modal-backdrop" (click)="closeModal()"></div>
+<div class="modalAdd">
+  <h2>Agregar Tarea</h2>
+  <form class="modalForm" (ngSubmit)="submitForm()">
+    <label>
+      Asignación:
+      <input type="text" [(ngModel)]="tarea.asignacion" name="asignacion" required />
+    </label>
+    <label>
+      Fecha de Asignación:
+      <input type="datetime-local" [(ngModel)]="tarea.fechaAsignacion" name="fechaAsignacion" required />
+    </label>
+    <label>
+      Fecha de Entrega:
+      <input type="datetime-local" [(ngModel)]="tarea.fechaEntrega" name="fechaEntrega" required />
+    </label>
+    <label>
+      Estado:
+      <select [(ngModel)]="tarea.estado" name="estado">
+        <option value="pendiente">Pendiente</option>
+        <option value="completada">Completada</option>
+      </select>
+    </label>
+    <div class="form-buttons">
+        <button type="submit">Agregar</button>
+        <button type="button" (click)="closeModal()">Cancelar</button>
+    </div>
+  </form>
+</div>
