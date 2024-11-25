@@ -3,8 +3,15 @@
     <thead>
       <tr>
         <th>
-          <input type="checkbox" />
+          <button (click)="toggleOrder()" class="sort-button">
+            <i
+              [ngClass]="
+                sortOrder === 'asc' ? 'fa fa-sort-up' : 'fa fa-sort-down'
+              "
+            ></i>
+          </button>
         </th>
+
         <th>Editar</th>
         <th>Fecha de asignación</th>
         <th>Fecha de entrega</th>
@@ -27,10 +34,21 @@
         </td>
         <td>{{ tarea.fechaAsignacion }}</td>
         <td>{{ tarea.fechaEntrega }}</td>
-        <td>{{ tarea.asignacion }}</td>
+        <td>
+          <a [routerLink]="['/cursos']" class="link-asignacion">
+            {{ tarea.asignacion }}
+          </a>
+        </td>
         <td>
           <span class="entregas">{{ tarea.entregas }}</span>
-          <i class="fa fa-paperclip"></i>
+          <i
+            class="fa fa-paperclip"
+            [ngClass]="{
+              'icono-gris': tarea.entregas === 0,
+              'icono-verde': tarea.entregas > 0
+            }"
+          >
+          </i>
         </td>
         <td>
           <input
@@ -40,7 +58,7 @@
           />
         </td>
         <td>
-          <button class="send-button">
+          <button class="send-button" (click)="marcarCompletada(tarea.id)">
             <i class="fa fa-paper-plane"></i>
           </button>
         </td>

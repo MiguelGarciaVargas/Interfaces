@@ -3,6 +3,7 @@
   width: 100%;
   overflow-x: auto;
   margin: 20px 0;
+  border-radius: 15px;
 }
 
 /* Tabla */
@@ -15,8 +16,8 @@
 
 /* Encabezado */
 .assignment-table thead {
-  background-color: #004ba8;
-  color: white;
+  background-color: #f3f6f9;
+  color: #4c5464;
 }
 
 .assignment-table th,
@@ -50,10 +51,32 @@
   color: #dc3545;
 }
 
+.sort-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* font-size: 20px; Ajusta el tamaño del ícono */
+  color: #004ba8; /* Color predeterminado del ícono */
+}
+
+.sort-button:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
 /* Estilo de entregas */
 .entregas {
   font-weight: bold;
   color: #004ba8;
+}
+
+/* Icono gris (cuando entregas es 0) */
+.icono-gris {
+  color: gray;
+}
+
+/* Icono verde (cuando entregas > 0) */
+.icono-verde {
+  color: green;
 }
 
 /* Responsive */
