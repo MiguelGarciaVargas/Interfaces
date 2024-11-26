@@ -53,8 +53,8 @@ export class PageTareasComponent {
       estado: 'pendiente',
     },
   ];
-  modalVisible = false;
-  editingTarea: Tarea | null = null;
+  modalVisible = false; /* Variable que controla si el modal se ve o no */
+  editingTarea: Tarea | null = null; /* Se pasa la tarea la que se quiere editar */
 
   showModal(tarea?: Tarea) {
     this.editingTarea = tarea || null;
@@ -66,7 +66,7 @@ export class PageTareasComponent {
     this.editingTarea = null;
   }
 
-  addTarea(tarea: Tarea) {
+  addTarea(tarea: Tarea) { /* Se agrega o edita la tarea */
     if (this.editingTarea) {
       const index = this.tareas.findIndex((t) => t.id === this.editingTarea?.id);
       if (index !== -1) {

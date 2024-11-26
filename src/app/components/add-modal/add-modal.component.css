@@ -1,4 +1,4 @@
-.modal-backdrop {
+.modal-backdrop { /* estilos para el fondo del modal */
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,7 @@
   z-index: 10;
 }
 
-.modalAdd {
+.modalAdd { /* estilos para el modal */
   position: fixed;
   top: 50%;
   left: 50%;

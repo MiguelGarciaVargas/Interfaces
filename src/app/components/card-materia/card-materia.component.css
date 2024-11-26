@@ -1,4 +1,4 @@
-.card {
+.card { /* estilos para cada tarjeta de las páginas con las asignaciones */
   width: 250px;
   height: auto;
   background-color: #2884cc;
@@ -11,7 +11,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-header {
+.card-header { /* parte superior de la tarjeta */
   width: 80%;
   border: 2px solid white;
   background-color: #2884cc;

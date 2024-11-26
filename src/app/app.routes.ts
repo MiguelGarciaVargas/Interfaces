@@ -7,7 +7,7 @@ import { PageNotasComponent } from './pages/page-notas/page-notas.component';
 import { PageTareasComponent } from './pages/page-tareas/page-tareas.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirige a login si no hay ruta especificada
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirige a login si no hay alguna ruta especificada
   { path: 'login', component: PageLoginComponent },
   { path: 'asistencias', component: PageAsistenciasComponent },
   { path: 'cursos', component: PageCursosComponent },

@@ -1,7 +1,7 @@
 <div class="modal-backdrop" (click)="closeModal()"></div>
 <div class="modalAdd">
   <h2>Agregar Tarea</h2>
-  <form class="modalForm" (ngSubmit)="submitForm()">
+  <form class="modalForm" (ngSubmit)="submitForm()"> <!-- Formulario para añadir o editar tareas -->
     <label>
       Asignación:
       <input type="text" [(ngModel)]="tarea.asignacion" name="asignacion" required />
