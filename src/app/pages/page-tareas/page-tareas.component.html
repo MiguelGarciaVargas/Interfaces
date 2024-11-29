@@ -6,13 +6,26 @@
   <div class="body-content">
     <div class="layout-container">
       <app-sidebar class="sidebar"></app-sidebar>
-
       <div class="main-content">
-        <app-search-bar class="search-bar"></app-search-bar>
-        <app-card-row class="card-row"></app-card-row>
+        <div class="fw centered">
+          <div class="actions-row">
+            <div class="centered">
+              <app-filtrar-select></app-filtrar-select>
+              <app-add-button (addClick)="showModal()"></app-add-button>
+              <app-add-modal
+                *ngIf="modalVisible"
+                [editingTarea]="editingTarea"
+                (onAddTarea)="addTarea($event)"
+                (onClose)="closeModal()"
+              ></app-add-modal>
+            </div>
+            <app-search-bar class="search-bar"></app-search-bar>
+          </div>
+        </div>
         <app-tabla-tarea
-          class="tabla-notas"
-          [listaTareas]="tareas"
+          class="fw"
+          [tareas]="tareas"
+          (onEditTarea)="showModal($event)"
         ></app-tabla-tarea>
       </div>
     </div>

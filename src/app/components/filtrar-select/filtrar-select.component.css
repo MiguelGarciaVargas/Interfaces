@@ -1,0 +1,10 @@
+.filter-select-class {
+    border-radius: 10px;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    border: 1px solid #4F4E4E4D;
+    width: 215px;
+}

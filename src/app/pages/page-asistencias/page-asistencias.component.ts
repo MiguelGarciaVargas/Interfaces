@@ -10,7 +10,6 @@ import { HeaderComponent } from '../../components/header/header.component';
   selector: 'app-page-asistencias',
   standalone: true,
   imports: [
-    CardMateriaComponent,
     CardRowComponent,
     SidebarComponent,
     SearchBarComponent,
